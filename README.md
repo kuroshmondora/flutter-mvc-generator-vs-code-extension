@@ -1,5 +1,5 @@
 [![Flutter Extensions](https://img.shields.io/badge/Flutter-grey?style=flat&logo=flutter&logoColor=blue)](https://flutter.dev)
-[![GitHub](https://img.shields.io/github/license/kuroshmondora/flutter-mvc-generator-vs-code-extension?color=blue&style=flat)](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/kuroshmondora/flutter-mvc-generator-vs-code-extension?color=blue&style=flat)](LICENSE)
 
 # Flutter MVC Architecture Generator
 
@@ -11,11 +11,11 @@ VsCode extension to generate boilerplate code when using using [providers](https
 
 The create MVC command or menu will add a **MVC**.
 
-![Create MVC command](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/mvc_command.gif)
+![Create MVC command](images/mvc_command.gif)
 
-![Create MVC menu](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/mvc_menu.gif)
+![Create MVC menu](images/mvc_menu.gif)
 
-![MVC Structure](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/mvc.png)
+![MVC Structure](images/mvc.png)
 
 #### Example
 
@@ -48,9 +48,9 @@ It will also add the following dependencies to the `pubspec.yaml` file
 
 The create model command or menu will add a **Model**.
 
-![Create Model command](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/model_command.gif)
+![Create Model command](images/model_command.gif)
 
-![Create Model menu](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/model_menu.gif)
+![Create Model menu](images/model_menu.gif)
 
 #### Example
 
@@ -77,9 +77,9 @@ It will also add the following dependencies to the `pubspec.yaml` file
 
 The create view command or menu will add a **View**.
 
-![Create View command](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/view_command.gif)
+![Create View command](images/view_command.gif)
 
-![Create View menu](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/view_menu.gif)
+![Create View menu](images/view_menu.gif)
 
 #### Example
 
@@ -106,9 +106,9 @@ It will also add the following dependencies to the `pubspec.yaml` file
 
 The create controller command or menu will add a **Controller**.
 
-![Create Controller command](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/controller_command.gif)
+![Create Controller command](images/controller_command.gif)
 
-![Create Controller menu](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/controller_menu.gif)
+![Create Controller menu](images/controller_menu.gif)
 
 #### Example
 
