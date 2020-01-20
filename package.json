@@ -15,7 +15,7 @@
     "MVC",
     "dart"
   ],
-  "publisher": "Kurosh",
+  "publisher": "kurosh",
   "icon": "images/flutter.png",
   "repository": "https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension",
   "author": {
