@@ -16,7 +16,8 @@
     "dart"
   ],
   "publisher": "Kurosh",
-  "icon": "https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/images/flutter.png",
+  "icon": "images/flutter.png",
+  "repository": "https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension",
   "author": {
     "email": "kurosh@mondora.com",
     "name": "Kurosh",
