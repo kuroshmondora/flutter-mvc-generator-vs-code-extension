@@ -1,5 +1,5 @@
 [![Flutter Extensions](https://img.shields.io/badge/Flutter-grey?style=flat&logo=flutter&logoColor=blue)](https://flutter.dev)
-[![GitHub](https://img.shields.io/github/license/kuroshmondora/flutter-mvc-generator-vs-code-extension?color=blue&style=flat)](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/kuroshmondora/flutter-mvc-generator-vs-code-extension?color=blue&style=flat)](https://github.com/kuroshmondora/flutter-mvc-generator-vs-code-extension/blob/master/LICENSE)
 
 # Flutter MVC Architecture Generator
 
