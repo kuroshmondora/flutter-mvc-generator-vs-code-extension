@@ -2,7 +2,7 @@
   "name": "flutter-mvc-generator",
   "displayName": "Flutter MVC Generator",
   "description": "VsCode extension to generate mvc architecture code template using Provider",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.41.0"
   },
