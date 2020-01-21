@@ -15,31 +15,36 @@ export class Controller extends Base {
       this.projectName === undefined
         ? "../../"
         : `package:${this.projectName}/`;
-    this._dartString = `// import model
+    this._dartString = `import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+// import model
 import '${initialPath}models/${fileName}/${fileName}_model.dart';
 
 class ${this.className} {
-  ${classPrefix}Model _viewModel = ${classPrefix}Model();
   ${this.className}();
   
-  void getter() {
+  void getter(BuildContext context) {
+    ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
     // Add code here for getter
-    _viewModel.getter();
+    viewModel.getter();
   }
 
-  void setter() {
+  void setter(BuildContext context) {
+    ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
     // Add code here for setter
-    _viewModel.setter();
+    viewModel.setter();
   }
 
-  void update() {
+  void update(BuildContext context) {
+    ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
     // Add code here for update
-    _viewModel.update();
+    viewModel.update();
   }
 
-  void remove() {
+  void remove(BuildContext context) {
+    ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
     // Add code here for remove
-    _viewModel.remove();
+    viewModel.remove();
   }
 }`;
   }

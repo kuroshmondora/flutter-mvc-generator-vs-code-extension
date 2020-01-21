@@ -1,7 +1,7 @@
 [![Flutter Extensions](https://img.shields.io/badge/Flutter-grey?style=flat&logo=flutter&logoColor=blue)](https://flutter.dev)
 [![GitHub](https://img.shields.io/github/license/kuroshmondora/flutter-mvc-generator-vs-code-extension?color=blue&style=flat)](LICENSE)
 
-# Flutter MVC Architecture Generator
+# Flutter MVC Architecture Generator [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/flutter-mvc-generator?style=flat)](https://marketplace.visualstudio.com/items?itemName=Kurosh.flutter-mvc-generator)
 
 VsCode extension to generate boilerplate code when using using [providers](https://pub.dev/packages/provider)
 
