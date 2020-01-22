@@ -9,3 +9,7 @@ All notable changes to the "flutter-mvc-generator" extension will be documented 
 ## [0.0.3]
 
 - Change controller structure to notify view
+
+## [0.0.5]
+
+- Add status to model structure

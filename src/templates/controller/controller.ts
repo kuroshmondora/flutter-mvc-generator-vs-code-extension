@@ -25,25 +25,25 @@ class ${this.className} {
   
   void getter(BuildContext context) {
     ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
-    // Add code here for getter
+    //TODO Add code here for getter
     viewModel.getter();
   }
 
   void setter(BuildContext context) {
     ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
-    // Add code here for setter
+    //TODO Add code here for setter
     viewModel.setter();
   }
 
   void update(BuildContext context) {
     ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
-    // Add code here for update
+    //TODO Add code here for update
     viewModel.update();
   }
 
   void remove(BuildContext context) {
     ${classPrefix}Model viewModel = Provider.of<${classPrefix}Model>(context, listen: false);
-    // Add code here for remove
+    //TODO Add code here for remove
     viewModel.remove();
   }
 }`;

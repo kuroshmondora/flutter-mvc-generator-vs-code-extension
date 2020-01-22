@@ -8,30 +8,58 @@ export class Model extends Base {
     super(fileName, suffix);
     this._dartString = `import 'package:flutter/material.dart';
 
+enum ${this.className}Status {
+  Ended,
+  Loading,
+}
+
 class ${this.className} extends ChangeNotifier {
+  ${this.className}Status _status;
+  ${this.className}Status get status => _status;
+
   ${this.className}();
 
   ${this.className}.instance() {
-    //Add here instance
+    //TODO Add code here
   }
   
   void getter() {
-    // Add code here for getter
+    _status = ${this.className}Status.Loading;
+    notifyListeners();
+
+    //TODO Add code here
+
+    _status = ${this.className}Status.Ended;
     notifyListeners();
   }
 
   void setter() {
-    // Add code here for setter
+     _status = ${this.className}Status.Loading;
+    notifyListeners();
+
+    //TODO Add code here
+    
+    _status = ${this.className}Status.Ended;
     notifyListeners();
   }
 
   void update() {
-    // Add code here for update
+    _status = ${this.className}Status.Loading;
+    notifyListeners();
+
+    //TODO Add code here
+    
+    _status = ${this.className}Status.Ended;
     notifyListeners();
   }
 
   void remove() {
-    // Add code here for remove
+    _status = ${this.className}Status.Loading;
+    notifyListeners();
+
+    //TODO Add code here
+    
+    _status = ${this.className}Status.Ended;
     notifyListeners();
   }
 }`;

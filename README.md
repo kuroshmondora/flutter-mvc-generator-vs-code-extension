@@ -130,3 +130,9 @@ If you give parameter for class name as `home`, the extension will create a dire
 It will also add the following dependencies to the `pubspec.yaml` file
 
 - provider: ^4.0.2
+
+#### Example code
+
+[MVC Demo](https://github.com/bazrafkan/mvc_demo)
+
+![MVC Demo](images/mvc_demo.gif)
