@@ -13,3 +13,7 @@ All notable changes to the "flutter-mvc-generator" extension will be documented 
 ## [0.0.5]
 
 - Add status to model structure
+
+## [0.0.6]
+
+- Add error status to model structure
