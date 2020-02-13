@@ -3,7 +3,7 @@
 
 # Flutter MVC Architecture Generator [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/Kurosh.flutter-mvc-generator?style=flat)](https://marketplace.visualstudio.com/items?itemName=Kurosh.flutter-mvc-generator)
 
-VsCode extension to generate boilerplate code when using using [providers](https://pub.dev/packages/provider)
+Visual studio code extension to generate mvc pattern template code using [providers](https://pub.dev/packages/provider)
 
 ## Features
 
@@ -42,7 +42,7 @@ If you give parameter for class name as `home`, the extension will create a dire
 
 It will also add the following dependencies to the `pubspec.yaml` file
 
-- provider: ^4.0.2
+- provider: ^4.0.4
 
 ### Create Model
 
@@ -71,7 +71,7 @@ If you give parameter for class name as `home`, the extension will create a dire
 
 It will also add the following dependencies to the `pubspec.yaml` file
 
-- provider: ^4.0.2
+- provider: ^4.0.4
 
 ### Create View
 
@@ -100,7 +100,7 @@ If you give parameter for class name as `home`, the extension will create a dire
 
 It will also add the following dependencies to the `pubspec.yaml` file
 
-- provider: ^4.0.2
+- provider: ^4.0.4
 
 ### Create Controller
 
@@ -129,7 +129,7 @@ If you give parameter for class name as `home`, the extension will create a dire
 
 It will also add the following dependencies to the `pubspec.yaml` file
 
-- provider: ^4.0.2
+- provider: ^4.0.4
 
 #### Example code
 

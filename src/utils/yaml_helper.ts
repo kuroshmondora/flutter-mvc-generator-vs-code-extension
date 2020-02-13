@@ -8,7 +8,7 @@ export class YamlHelper {
     let provider = this.getProvider();
     console.debug(`provider: ${provider}`);
     if (provider === undefined) {
-      this.addDependencyToPubspec("provider", "4.0.2");
+      this.addDependencyToPubspec("provider", "4.0.4");
       this.addAssetComment();
     }
   }

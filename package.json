@@ -2,7 +2,7 @@
   "name": "flutter-mvc-generator",
   "displayName": "Flutter MVC Generator",
   "description": "Visual studio code extension to generate mvc pattern template code using Provider for flutter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.41.0"
   },
