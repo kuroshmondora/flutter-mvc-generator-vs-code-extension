@@ -26,11 +26,14 @@ If you give parameter for class name as `home`, the extension will create a dire
     |-- android
     |-- ios
     |-- lib
+        |-- components
         |-- models
             |-- home
                 |-- home_model.dart
         |-- views
             |-- home
+                |-- components
+                |-- layouts
                 |-- home_view.dart
         |-- controllers
             |-- home
@@ -90,8 +93,11 @@ If you give parameter for class name as `home`, the extension will create a dire
     |-- android
     |-- ios
     |-- lib
+        |-- components
         |-- views
             |-- home
+                |-- components
+                |-- layouts
                 |-- home_view.dart
         |-- main.dart
     |-- test

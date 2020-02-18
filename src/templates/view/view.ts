@@ -32,7 +32,7 @@ class ${this.className} extends StatelessWidget {
       child: Consumer<${classPrefix}Model>(
         builder: (context, viewModel, child) {
           return Container(
-              // Add widget here
+              //TODO Add layout or component here
               );
         },
       ),

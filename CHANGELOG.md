@@ -21,3 +21,8 @@ All notable changes to the "flutter-mvc-generator" extension will be documented 
 ## [0.0.7]
 
 - Upgrade provider package to 4.0.4
+
+## [0.0.8]
+
+- Add components folder to lib folder
+- Add components and layouts folders to each view folder

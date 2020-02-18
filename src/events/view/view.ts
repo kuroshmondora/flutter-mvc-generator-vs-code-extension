@@ -4,7 +4,7 @@ import { existsSync } from "fs";
 import { FileSystemManager } from "../../utils/file_system_manager";
 import { View } from "../../templates/view/view";
 import { YamlHelper } from "../../utils/yaml_helper";
-
+import { BaseFile } from "../base";
 export class ViewFile {
   constructor(
     private rootPath: string,
@@ -12,8 +12,31 @@ export class ViewFile {
     private folders?: string[]
   ) {
     console.debug(`ViewFile(rootPath: ${rootPath}, fileName: ${fileName})`);
+    let baseFile = new BaseFile(
+      this.rootPath,
+      this.snakeCasedFileName,
+      this.folders
+    );
+    let componentsFolderCreated = FileSystemManager.createFolder(
+      baseFile.pathComponents
+    );
+    if (!componentsFolderCreated) {
+      return;
+    }
     let folderCreated = FileSystemManager.createFolder(this.pathValue);
     if (!folderCreated) {
+      return;
+    }
+    let viewComponentsFolderCreated = FileSystemManager.createFolder(
+      baseFile.pathViewComponents
+    );
+    if (!viewComponentsFolderCreated) {
+      return;
+    }
+    let viewLayoutsFolderCreated = FileSystemManager.createFolder(
+      baseFile.pathViewLayouts
+    );
+    if (!viewLayoutsFolderCreated) {
       return;
     }
   }
