@@ -1,8 +1,8 @@
 {
   "name": "flutter-mvc-generator",
   "displayName": "Flutter MVC Generator",
-  "description": "Visual studio code extension to generate mvc pattern template code using Provider for flutter",
-  "version": "0.0.8",
+  "description": "Visual studio code extension to generate MVC and MV patterns template code using Provider for flutter",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -32,6 +32,7 @@
     }
   ],
   "activationEvents": [
+    "onCommand:extension.createMV",
     "onCommand:extension.createMVC",
     "onCommand:extension.createView",
     "onCommand:extension.createModel",
@@ -40,6 +41,11 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
+      {
+        "command": "extension.createMV",
+        "title": "Create flutter MV",
+        "category": "Flutter Architecture"
+      },
       {
         "command": "extension.createMVC",
         "title": "Create flutter MVC",
@@ -63,6 +69,10 @@
     ],
     "menus": {
       "explorer/context": [
+        {
+          "command": "extension.createMV",
+          "group": "1_flutter_mvc_modification"
+        },
         {
           "command": "extension.createMVC",
           "group": "1_flutter_mvc_modification"

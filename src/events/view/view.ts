@@ -9,7 +9,8 @@ export class ViewFile {
   constructor(
     private rootPath: string,
     private fileName: string,
-    private folders?: string[]
+    private folders?: string[],
+    private pattern?: string
   ) {
     console.debug(`ViewFile(rootPath: ${rootPath}, fileName: ${fileName})`);
     let baseFile = new BaseFile(
@@ -44,9 +45,14 @@ export class ViewFile {
   public createResponsiveViews() {
     this.createFiles(
       this.snakeCasedFileName + "_view.dart",
-      new View(this.snakeCasedFileName, "View", YamlHelper.getProjectName())
-        .dartString
+      new View(
+        this.snakeCasedFileName,
+        "View",
+        YamlHelper.getProjectName(),
+        this.pattern
+      ).dartString
     );
+
     YamlHelper.initializeWithDependencies();
   }
 

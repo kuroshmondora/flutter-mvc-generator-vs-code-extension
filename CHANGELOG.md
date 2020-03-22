@@ -26,3 +26,8 @@ All notable changes to the "flutter-mvc-generator" extension will be documented 
 
 - Add components folder to lib folder
 - Add components and layouts folders to each view folder
+
+## [0.1.0]
+
+- Add MV pattern
+- set provider package to ^4.0.4

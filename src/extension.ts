@@ -8,6 +8,30 @@ import { ModelFile } from "./events/model/model";
 import { ControllerFile } from "./events/controller/controller";
 
 export function activate(context: vscode.ExtensionContext) {
+  let mvDisposable = vscode.commands.registerCommand(
+    "extension.createMV",
+    async () => {
+      let inputString = await checkInputString();
+      if (inputString === undefined) {
+        VsCodeActions.showErrorMessage("Invalid name for file");
+        return;
+      }
+      let folders: string[] = [];
+      folders = getFolders(inputString);
+      let fileName = getFileName(inputString);
+      if (fileName === undefined) {
+        VsCodeActions.showErrorMessage("Invalid name for file");
+        return;
+      }
+      let rootPath = VsCodeActions.rootPath;
+      if (rootPath === undefined) {
+        return;
+      }
+      new ModelFile(rootPath, fileName, folders).createResponsiveViews();
+      new ViewFile(rootPath, fileName, folders, "MV").createResponsiveViews();
+    }
+  );
+
   let mvcDisposable = vscode.commands.registerCommand(
     "extension.createMVC",
     async () => {
@@ -28,7 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
       new ModelFile(rootPath, fileName, folders).createResponsiveViews();
-      new ViewFile(rootPath, fileName, folders).createResponsiveViews();
+      new ViewFile(rootPath, fileName, folders, "MVC").createResponsiveViews();
       new ControllerFile(rootPath, fileName, folders).createResponsiveViews();
     }
   );
@@ -75,7 +99,7 @@ export function activate(context: vscode.ExtensionContext) {
       if (rootPath === undefined) {
         return;
       }
-      new ViewFile(rootPath, fileName, folders).createResponsiveViews();
+      new ViewFile(rootPath, fileName, folders, "MVC").createResponsiveViews();
     }
   );
 
@@ -102,6 +126,7 @@ export function activate(context: vscode.ExtensionContext) {
     }
   );
 
+  context.subscriptions.push(mvDisposable);
   context.subscriptions.push(mvcDisposable);
   context.subscriptions.push(modelDisposable);
   context.subscriptions.push(viewDisposable);

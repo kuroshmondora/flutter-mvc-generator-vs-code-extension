@@ -11,7 +11,7 @@ export class Model extends Base {
 enum ${this.className}Status {
   Ended,
   Loading,
-  Error
+  Error,
 }
 
 class ${this.className} extends ChangeNotifier {
@@ -40,7 +40,7 @@ class ${this.className} extends ChangeNotifier {
   }
 
   void setter() {
-     _status = ${this.className}Status.Loading;
+    _status = ${this.className}Status.Loading;
     notifyListeners();
 
     //TODO Add code here
