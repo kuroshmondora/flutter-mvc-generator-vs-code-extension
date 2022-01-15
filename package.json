@@ -116,6 +116,6 @@
   "dependencies": {
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   }
 }
