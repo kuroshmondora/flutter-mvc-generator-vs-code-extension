@@ -49,6 +49,8 @@ import 'package:provider/provider.dart';
 import '${initialPath}models/${fileName}/${fileName}_model.dart';
 
 class ${this.className} extends StatelessWidget {
+  const ${this.className}({super.key});
+
   @override
   Widget build(BuildContext context) {`;
 
