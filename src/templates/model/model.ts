@@ -9,18 +9,18 @@ export class Model extends Base {
     this._dartString = `import 'package:flutter/material.dart';
 
 enum ${this.className}Status {
-  Ended,
-  Loading,
-  Error,
+  ended,
+  loading,
+  error,
 }
 
 class ${this.className} extends ChangeNotifier {
-  ${this.className}Status _status;
-  String _errorCode;
-  String _errorMessage;
+  ${this.className}Status _status = ${this.className}Status.ended;
+  String? _errorCode;
+  String? _errorMessage;
 
-  String get errorCode => _errorCode;
-  String get errorMessage => _errorMessage;
+  String get errorCode => _errorCode ?? '';
+  String get errorMessage => _errorMessage ?? '';
   ${this.className}Status get status => _status;
 
   ${this.className}();

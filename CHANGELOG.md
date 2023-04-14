@@ -31,3 +31,6 @@ All notable changes to the "flutter-mvc-generator" extension will be documented 
 
 - Add MV pattern
 - set provider package to ^4.0.4
+## [0.1.1]
+
+- Added compliance to latest flutter version 3.7.7
